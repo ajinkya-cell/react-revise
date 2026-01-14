@@ -6,9 +6,9 @@ import StopWatch from "./components/UseRef.one";
 export default function Home() {
   return (
  <>
- {/* <UseEffect/> */}
+ <UseEffect/>
  {/* <Conditional/> */}
- <StopWatch/>
+ {/* <StopWatch/> */}
  </>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import { SiFiledotio } from "react-icons/si";
 interface Geo {
   lat: string;
   lng: string;
@@ -79,15 +80,16 @@ const UseEffect = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className="bg-neutral-950">
       <h1>useEffect Assignment</h1>
 {/* @ts-ignore */}
       {isLoading ? <p>Loading...</p> : <Card user={user} />}
 
       <button
-        className="bg-gray-400 p-2 rounded-2xl cursor-pointer hover:bg-amber-300"
+        className="bg-neutral-900 flex gap-2 items-center hover:scale-110 transition-all duration-200 border-2 p-2 rounded-xl cursor-pointer hover:bg-neutral-800"
         onClick={() => setId((prev) => prev + 1)}
       >
+        <SiFiledotio className=" group-hover:scale-110 group-hover:rotate-2 transition-transform duration-300 "/>
         Next User
       </button>
     </div>

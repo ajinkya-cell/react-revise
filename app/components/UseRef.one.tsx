@@ -25,7 +25,7 @@ function StopWatch() {
     return (
         <div>
             <h1>Timer : {time}</h1>
-            <button className="bg-gray-200 text-black rounded-2xl mr-2 p-2 px-4" onClick={startTimer}>Start</button>
+            <button className="bg-gray-200  text-black rounded-2xl mr-2 p-2 px-4" onClick={startTimer}>Start</button>
             <button className="bg-gray-200 text-black rounded-2xl p-2 px-4" onClick={stopTimer}>Stop</button>
         </div>
     )
